@@ -17,4 +17,6 @@ Route::get('/', function () {
 Route::get('/hello',function(){
     return 'hello';
 });
-Route::get('/sqltest','sqltestController@he');
+Route::get('/sqltest','sqltestController@unity');
+Route::get('/sqlselect','sqltestController@he');
+Route::get('/sql','sqltestController@she');
