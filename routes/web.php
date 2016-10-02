@@ -20,3 +20,10 @@ Route::get('/hello',function(){
 Route::get('/sqltest','sqltestController@unity');
 Route::get('/sqlselect','sqltestController@he');
 Route::get('/sql','sqltestController@she');
+Route::get('/logintest','testController@login');
+Route::post('/loginhtest','testController@hlogin');
+Route::get('/unityinser','testController@insert');
+Route::post('/unityhiser','testController@hisert');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

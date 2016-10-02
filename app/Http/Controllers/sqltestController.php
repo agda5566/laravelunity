@@ -18,12 +18,16 @@ class sqltestController extends Controller
 			return \View::make('green')->with('users',$users);
     }
     public function unity(){
-      $a='dog';
-      $b='123';
-      $insert=DB::table('cus')->insert(
+      // $a='cat@gmail.com';
+      // $b='bigda';
+      // $c='123456'
+      // //$d='';
+      $insert=DB::table('score')->insert(
     			[
-    			'name'=>$a,
-    			'passwork'=>$b
+    			'email'=>'cat@gmail.com',
+    			'username'=>'bigda',
+          'password'=>bcrypt('123456')
+          //'remember_token'=>$d
     			]
     			);
     		if($insert)
